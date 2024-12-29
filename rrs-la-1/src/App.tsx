@@ -1,11 +1,11 @@
 import React from 'react';
-import {BrowserRouter as Router, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Route, Routes} from 'react-router-dom';
 
 import './App.css';
 import './styles/sb-admin-2.min.css';
-import Admin from './pages/Admin';
-import PrivateRoute from './components';
-import Login from './pages/Account';
+import {PrivateRoute} from './components/index.ts';
+import Login from './pages/Account/index.ts';
+import Admin from './pages/Admin/index.ts';
 
 
 function App() {
