@@ -3,8 +3,9 @@ import {BrowserRouter as Router, Routes} from 'react-router-dom';
 
 import './App.css';
 import './styles/sb-admin-2.min.css';
-import Login from './pages/Account/Login';
-import Admin from './pages/Admin/Admin';
+import Admin from './pages/Admin';
+import PrivateRoute from './components';
+import Login from './pages/Account';
 
 
 function App() {
@@ -12,8 +13,9 @@ function App() {
     <div className="App" id='wrapper'>
       <Router>
         <Routes>
-          <Login></Login>
-          <Admin></Admin>
+          <PrivateRoute>
+            <Login/>
+          </PrivateRoute>
         </Routes>
       </Router>
     </div>
