@@ -1,8 +1,8 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 
 const Admin = () => {
   return (
-    <div>
+    <Fragment>
   {/* Sidebar */}
   <ul className="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
     {/* Sidebar - Brand */}
@@ -588,7 +588,7 @@ const Admin = () => {
     </footer>
     {/* End of Footer */}
   </div>
-</div>
+</Fragment>
   )
 }
 

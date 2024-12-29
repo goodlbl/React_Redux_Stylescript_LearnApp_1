@@ -12,11 +12,9 @@ function App() {
   return (
     <div className="App" id='wrapper'>
       <Router>
-        <Routes>
-          <PrivateRoute>
-            <Login/>
-          </PrivateRoute>
-        </Routes>
+        <PrivateRoute>
+          <Admin/>
+        </PrivateRoute>
       </Router>
     </div>
   );
