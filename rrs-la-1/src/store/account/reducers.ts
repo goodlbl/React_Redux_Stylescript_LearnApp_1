@@ -7,11 +7,11 @@ const initialState: AccountState = {
     token: null
 }
 
-const accountReducer = {
+const accountReducer = (
     state: AccountState = initialState,
     action: AccountActionTypes
-}; AccountState => {
-    switch {action.type} {
+): AccountState => {
+    switch (action.type) {
         case LOGIN_REQUEST: {
             return {...state, loading: true};
         }
