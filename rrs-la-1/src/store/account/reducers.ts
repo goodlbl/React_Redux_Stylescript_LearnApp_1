@@ -45,4 +45,4 @@ const accountReducer = {
     }
 };
 
-export {accountReducer}
+export {accountReducer};
